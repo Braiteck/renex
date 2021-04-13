@@ -179,10 +179,11 @@ function productHeight(context, step) {
         finish = step,
         $products = context.find('.product')
 
-    $products.find('.name').height('auto')
+    $products.find('.name, .price').height('auto')
 
     $products.each(function () {
         setHeight($products.slice(start, finish).find('.name'))
+        setHeight($products.slice(start, finish).find('.price'))
 
         start = start + step
         finish = finish + step
