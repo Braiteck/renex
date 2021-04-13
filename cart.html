@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#18638d">
+		<meta name="theme-color" content="#18638d">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/datepicker.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1239.css" media="print, (max-width: 1239px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<button class="close"></button>
+
+					<div class="mob_scroll">
+						<div class="top">
+							<div class="cont row">
+								<div class="location">
+									<img src="images/ic_location.svg" alt="" class="icon">
+									<span>г. Новосибирск, ул. Декабристов 269</span>
+								</div>
+
+								<div class="account">
+									<img src="images/ic_login.svg" alt="" class="icon">
+
+									<a href="/">Авторизация</a>
+									<div class="sep">|</div>
+									<a href="/">Регистрация</a>
+								</div>
+
+								<div class="links">
+									<a href="/">О компанииы</a>
+									<div class="sep"></div>
+									<a href="/">Условия работы</a>
+									<div class="sep"></div>
+									<a href="/">Контакты</a>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="info">
+							<div class="cont row">
+								<a href="/" class="logo">
+									<img src="images/logo.png" alt="">
+									<div>
+										<div class="name">Ренекс</div>
+										<div class="desc">оборудование и пренадлежности<br> для рентгенодиагностики</div>
+									</div>
+								</a>
+
+								<div class="search">
+									<div class="title">
+										<div><b>Поиск</b><br> по товарам</div>
+									</div>
+
+									<form action="">
+										<input type="text" name="" value="" class="input" placeholder="Введите наименование или артикул товара">
+
+										<button type="submit" class="submit_btn">
+											<img src="images/ic_search.svg" alt="">
+										</button>
+									</form>
+								</div>
+
+								<div class="cart">
+									<div class="icon">
+										<img src="images/ic_cart.svg" alt="">
+										<div class="count">10</div>
+									</div>
+
+									<div>
+										<div class="name">КОРЗИНА</div>
+										<a href="/" class="checkout_link">Оформить заказ</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="bottom">
+							<div class="cont row">
+								<div class="catalog modal_cont">
+									<button class="btn mini_modal_btn" data-modal-id="#catalog_modal">
+										<div class="icon">
+											<span></span>
+										</div>
+										<span>Каталог товаров</span>
+									</button>
+
+									<div class="mini_modal" id="catalog_modal">
+										<div class="cont">
+											<div class="row">
+												<div><a href="/">
+													<div class="icon">
+														<img src="images/ic_category1.svg" alt="">
+													</div>
+													<span>Рентгенозащитная одежда</span>
+												</a></div>
+
+												<div><a href="/">
+													<div class="icon">
+														<img src="images/ic_category2.svg" alt="">
+													</div>
+													<span>Рентгенозащитные ширмы</span>
+												</a></div>
+
+												<div><a href="/">
+													<div class="icon">
+														<img src="images/ic_category3.svg" alt="">
+													</div>
+													<span>Экраны усиливающие медицинские</span>
+												</a></div>
+
+												<div><a href="/">
+													<div class="icon">
+														<img src="images/ic_category4.svg" alt="">
+													</div>
+													<span>Рентгенозащитные окна </span>
+												</a></div>
+
+												<div><a href="/">
+													<div class="icon">
+														<img src="images/ic_category5.svg" alt="">
+													</div>
+													<span>Кассеты радиографические</span>
+												</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="contacts">
+									<div class="phone">
+										<a href="tel:+73832625029">
+											<img src="images/ic_phone.svg" alt="">
+											<span>+7(383)262-50-29</span>
+										</a>
+									</div>
+
+									<div class="site">
+										<a href="https://RENEX.RU">
+											<img src="images/ic_site.svg" alt="">
+											<span>RENEX.RU</span>
+										</a>
+									</div>
+
+									<div class="email">
+										<a href="mailto:office@renex.ru">
+											<img src="images/ic_email.svg" alt="">
+											<span>office@renex.ru</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+						<a href="/" class="logo">
+							<img src="images/logo.png" alt="">
+							<div>
+								<div class="name">Ренекс</div>
+								<div class="desc">оборудование и пренадлежности<br> для рентгенодиагностики</div>
+							</div>
+						</a>
+
+						<div class="phone">
+							<a href="tel:+73832625029">
+								<img src="images/ic_phone.svg" alt="">
+								<span>+7(383)262-50-29</span>
+							</a>
+						</div>
+
+						<div class="search modal_cont">
+							<button class="btn mini_modal_btn" data-modal-id="#mob_search_modal">
+								<img src="images/ic_search.svg" alt=""></button>
+
+							<div class="mini_modal" id="mob_search_modal">
+								<form action="">
+									<input type="text" name="" value="" class="input" placeholder="Введите наименование или артикул товара">
+
+									<button type="submit" class="submit_btn">
+										<img src="images/ic_search.svg" alt="">
+									</button>
+								</form>
+							</div>
+						</div>
+
+						<a href="/" class="cart_link">
+							<img src="images/ic_cart.svg" alt="">
+							<div class="count">10</div>
+						</a>
+
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+					</div>
+				</section>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<div class="breadcrumbs">
+							Вы находитесь тут:
+							<a href="/">Главная</a> <span class="sep">|</span>
+							<span class="current">Оформление заказа</span>
+						</div>
+
+						<div class="row no_border">
+							<h1 class="page_title">Состав заказа</h1>
+
+							<div class="links">
+								<div><a href="/">Очистить корзину</a></div>
+
+								<div><a href="/">Продолжить покупки</a></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="cart_info block">
+					<div class="cont">
+						<div class="list">
+							<div class="product">
+								<div class="number"></div>
+
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/product_thumb.jpg" alt="" class="lozad">
+								</a>
+
+								<div class="name">
+									<a href="/">Фартук рентгенозащитный двусторонний "РЕНЕКС ФРД"</a>
+								</div>
+
+								<div class="articul">Арт.: 12345678</div>
+
+								<div class="price">37999 ₽</div>
+
+								<div class="amount">
+									<button type="button" class="minus">-</button>
+
+									<input type="text" value="1" class="input"
+									  data-minimum="1" data-maximum="99999" data-step="1" data-unit="" maxlength="5">
+
+									<button type="button" class="plus">+</button>
+								</div>
+
+								<div class="delete">
+									<button class="btn">
+										<img src="images/ic_delete.svg" alt="">
+									</button>
+								</div>
+							</div>
+
+
+							<div class="product">
+								<div class="number"></div>
+
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/product_thumb.jpg" alt="" class="lozad">
+								</a>
+
+								<div class="name">
+									<a href="/">Фартук рентгенозащитный двусторонний "РЕНЕКС ФРД"</a>
+								</div>
+
+								<div class="articul">Арт.: 12345678</div>
+
+								<div class="price">37999 ₽</div>
+
+								<div class="amount">
+									<button type="button" class="minus">-</button>
+
+									<input type="text" value="1" class="input"
+									  data-minimum="1" data-maximum="99999" data-step="1" data-unit="" maxlength="5">
+
+									<button type="button" class="plus">+</button>
+								</div>
+
+								<div class="delete">
+									<button class="btn">
+										<img src="images/ic_delete.svg" alt="">
+									</button>
+								</div>
+							</div>
+
+
+							<div class="product">
+								<div class="number"></div>
+
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/product_thumb.jpg" alt="" class="lozad">
+								</a>
+
+								<div class="name">
+									<a href="/">Фартук рентгенозащитный двусторонний "РЕНЕКС ФРД"</a>
+								</div>
+
+								<div class="articul">Арт.: 12345678</div>
+
+								<div class="price">37999 ₽</div>
+
+								<div class="amount">
+									<button type="button" class="minus">-</button>
+
+									<input type="text" value="1" class="input"
+									  data-minimum="1" data-maximum="99999" data-step="1" data-unit="" maxlength="5">
+
+									<button type="button" class="plus">+</button>
+								</div>
+
+								<div class="delete">
+									<button class="btn">
+										<img src="images/ic_delete.svg" alt="">
+									</button>
+								</div>
+							</div>
+
+
+							<div class="product">
+								<div class="number"></div>
+
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/product_thumb.jpg" alt="" class="lozad">
+								</a>
+
+								<div class="name">
+									<a href="/">Фартук рентгенозащитный двусторонний "РЕНЕКС ФРД"</a>
+								</div>
+
+								<div class="articul">Арт.: 12345678</div>
+
+								<div class="price">37999 ₽</div>
+
+								<div class="amount">
+									<button type="button" class="minus">-</button>
+
+									<input type="text" value="1" class="input"
+									  data-minimum="1" data-maximum="99999" data-step="1" data-unit="" maxlength="5">
+
+									<button type="button" class="plus">+</button>
+								</div>
+
+								<div class="delete">
+									<button class="btn">
+										<img src="images/ic_delete.svg" alt="">
+									</button>
+								</div>
+							</div>
+
+
+							<div class="product">
+								<div class="number"></div>
+
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/product_thumb.jpg" alt="" class="lozad">
+								</a>
+
+								<div class="name">
+									<a href="/">Фартук рентгенозащитный двусторонний "РЕНЕКС ФРД"</a>
+								</div>
+
+								<div class="articul">Арт.: 12345678</div>
+
+								<div class="price">37999 ₽</div>
+
+								<div class="amount">
+									<button type="button" class="minus">-</button>
+
+									<input type="text" value="1" class="input"
+									  data-minimum="1" data-maximum="99999" data-step="1" data-unit="" maxlength="5">
+
+									<button type="button" class="plus">+</button>
+								</div>
+
+								<div class="delete">
+									<button class="btn">
+										<img src="images/ic_delete.svg" alt="">
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="bottom">
+							<div class="need_auth">
+								<div>Для заказа пожалуйста <a href="/">Авторизуйтесь</a> в системе</div>
+
+								<div>Если у вас еще нет учетной записи вы можете <a href="/">Зарегистроваться</a> или заполнить форму заказа</div>
+							</div>
+
+							<div class="total">
+								<div class="amount"><b>Итого:</b> 100022 шт.</div>
+
+								<div class="price"><b>Стоимость заказа:</b> 2 370 000</div>
+
+								<div class="price_nds">В счет будет добавлен НДС + 20%</div>
+
+								<button class="checkout_btn">Оформить заказ</button>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="checkout_info block">
+					<div class="cont">
+						<form action="" class="form">
+							<div class="cols row">
+								<div class="col">
+									<div class="section">
+										<div class="title">Учетные данные</div>
+
+										<div class="line row">
+											<div class="label">
+												<div>Мобильный телефон <span class="required">*</span></div>
+											</div>
+
+											<div class="field">
+												<input type="tel" name="" value="" class="input" placeholder="+7 (   )     -    -   ">
+											</div>
+										</div>
+
+										<div class="line row">
+											<div class="label">
+												<div>E-mail <span class="required">*</span></div>
+											</div>
+
+											<div class="field">
+												<input type="email" name="" value="" class="input">
+											</div>
+										</div>
+
+										<div class="line row">
+											<div class="label">
+												<div>Пароль <span class="required">*</span></div>
+											</div>
+
+											<div class="field">
+												<input type="password" name="" value="" class="input">
+											</div>
+										</div>
+									</div>
+
+
+									<div class="section">
+										<div class="title">Юридический адрес</div>
+
+										<div class="line row">
+											<div class="label">
+												<div>Город, область,<br> улица, дом <span class="required">*</span></div>
+											</div>
+
+											<div class="field">
+												<input type="text" name="" value="" class="input">
+											</div>
+										</div>
+
+										<div class="line row">
+											<div class="label">
+												<div>Индекс <span class="required">*</span></div>
+											</div>
+
+											<div class="field">
+												<input type="text" name="" value="" class="input">
+											</div>
+										</div>
+									</div>
+
+
+									<div class="section">
+										<div class="title">
+											<div>Фактический адрес <small>(почтовый/доставки)</small></div>
+
+											<div class="coincides">
+												<input type="checkbox" name="coincides" id="coincides_check">
+												<label for="coincides_check">Совпадает с юридическим</label>
+											</div>
+										</div>
+
+										<div class="line row">
+											<div class="label">
+												<div>Город, область,<br> улица, дом <span class="required">*</span></div>
+											</div>
+
+											<div class="field">
+												<input type="text" name="" value="" class="input">
+											</div>
+										</div>
+
+										<div class="line row">
+											<div class="label">
+												<div>Индекс <span class="required">*</span></div>
+											</div>
+
+											<div class="field">
+												<input type="text" name="" value="" class="input">
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="col">
+									<div class="section ep">
+										<div class="title">
+											<div>Данные о компании</div>
+
+											<div class="coincides">
+												<input type="checkbox" name="ep" id="ep_check">
+												<label for="ep_check">ИП</label>
+											</div>
+										</div>
+
+										<div class="line row">
+											<div class="label">
+												<div>Наименование организации <span class="required">*</span></div>
+											</div>
+
+											<div class="field">
+												<input type="text" name="" value="" class="input" disabled>
+											</div>
+										</div>
+
+										<div class="line row">
+											<div class="label">
+												<div>ИНН <span class="required">*</span></div>
+											</div>
+
+											<div class="field row">
+												<input type="text" name="" value="" class="input" disabled>
+
+												<div class="label">КПП</div>
+
+												<div class="field">
+													<input type="text" name="" value="" class="input" disabled>
+												</div>
+											</div>
+										</div>
+
+										<div class="line row">
+											<div class="label">
+												<div>ОГРН / ОГРНИП <span class="required">*</span></div>
+											</div>
+
+											<div class="field">
+												<input type="text" name="" value="" class="input error" disabled>
+											</div>
+										</div>
+
+										<div class="line row">
+											<div class="label">
+												<div>Должность<br> руководителя <span class="required">*</span></div>
+											</div>
+
+											<div class="field">
+												<input type="text" name="" value="" class="input" disabled>
+											</div>
+										</div>
+
+										<div class="line row">
+											<div class="label">
+												<div>ФИО руководителя<br> полностью <span class="required">*</span></div>
+											</div>
+
+											<div class="field">
+												<input type="text" name="" value="" class="input" disabled>
+											</div>
+										</div>
+
+										<div class="line row">
+											<div class="label">
+												<div>Наименование<br> банка <span class="required">*</span></div>
+											</div>
+
+											<div class="field row">
+												<input type="text" name="" value="" class="input" disabled>
+
+												<div class="label">
+													<div>БИК <span class="required">*</span></div>
+												</div>
+
+												<div class="field">
+													<input type="text" name="" value="" class="input" disabled>
+												</div>
+											</div>
+										</div>
+
+										<div class="line row">
+											<div class="label">
+												<div>Расчетный счет <span class="required">*</span></div>
+											</div>
+
+											<div class="field">
+												<input type="text" name="" value="" class="input" disabled>
+											</div>
+										</div>
+
+										<div class="line row">
+											<div class="label">
+												<div>Корреспондентский<br> счет <span class="required">*</span></div>
+											</div>
+
+											<div class="field">
+												<input type="text" name="" value="" class="input" disabled>
+											</div>
+										</div>
+
+										<div class="line agree">
+											<div class="field">
+												<input type="checkbox" name="agree" id="agree_check" checked>
+												<label for="agree_check">
+													Я принимаю условия политики <a href="/" target="_blank">обработки персональных данных</a>
+												</label>
+											</div>
+										</div>
+
+										<div class="submit">
+											<button type="submit" class="submit_btn">Заказать</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="info">
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.png" alt="">
+							<div>
+								<div class="name">Ренекс</div>
+								<div class="desc">оборудование и пренадлежности<br> для рентгенодиагностики</div>
+							</div>
+						</div>
+
+						<div class="location">
+							ЗАО "РЕНЕКС"<br>
+							630063, Новосибирск,<br>
+							ул. Декабристов 269, помещение 27
+						</div>
+
+						<div class="contacts">
+							<div class="phone">
+								<img src="images/ic_phone.svg" alt="">
+
+								<div>Тел./факс: <a href="tel:83832622506">8 (383) 262-25-06</a>, <a href="tel:2625204">262-52-04</a></div>
+
+								<div>Факс: <a href="fax:83832625029">8 (383) 262-50-29</a></div>
+							</div>
+
+							<div class="email">
+								<img src="images/ic_email.svg" alt="">
+
+								<div>E-mail: <a href="mailto:office@renex.ru">office@renex.ru</a></div>
+							</div>
+						</div>
+
+						<div class="links">
+							<div><a href="/">Ссылки</a></div>
+
+							<div><a href="/">Политика конфиденциальности</a></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="bottom">
+					<div class="cont row">
+						<div class="copyright">Все права защищены. 2021</div>
+
+						<div class="creator">
+							<a href="/" target="_blank" rel="noopener">Разработка и поддержка: Valuehost</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/datepicker.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#18638d">
+		<meta name="theme-color" content="#18638d">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/datepicker.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1239.css" media="print, (max-width: 1239px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<button class="close"></button>
+
+					<div class="mob_scroll">
+						<div class="top">
+							<div class="cont row">
+								<div class="location">
+									<img src="images/ic_location.svg" alt="" class="icon">
+									<span>г. Новосибирск, ул. Декабристов 269</span>
+								</div>
+
+								<div class="account">
+									<img src="images/ic_login.svg" alt="" class="icon">
+
+									<a href="/">Авторизация</a>
+									<div class="sep">|</div>
+									<a href="/">Регистрация</a>
+								</div>
+
+								<div class="links">
+									<a href="/">О компанииы</a>
+									<div class="sep"></div>
+									<a href="/">Условия работы</a>
+									<div class="sep"></div>
+									<a href="/">Контакты</a>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="info">
+							<div class="cont row">
+								<a href="/" class="logo">
+									<img src="images/logo.png" alt="">
+									<div>
+										<div class="name">Ренекс</div>
+										<div class="desc">оборудование и пренадлежности<br> для рентгенодиагностики</div>
+									</div>
+								</a>
+
+								<div class="search">
+									<div class="title">
+										<div><b>Поиск</b><br> по товарам</div>
+									</div>
+
+									<form action="">
+										<input type="text" name="" value="" class="input" placeholder="Введите наименование или артикул товара">
+
+										<button type="submit" class="submit_btn">
+											<img src="images/ic_search.svg" alt="">
+										</button>
+									</form>
+								</div>
+
+								<div class="cart">
+									<div class="icon">
+										<img src="images/ic_cart.svg" alt="">
+										<div class="count">10</div>
+									</div>
+
+									<div>
+										<div class="name">КОРЗИНА</div>
+										<a href="/" class="checkout_link">Оформить заказ</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="bottom">
+							<div class="cont row">
+								<div class="catalog modal_cont">
+									<button class="btn mini_modal_btn" data-modal-id="#catalog_modal">
+										<div class="icon">
+											<span></span>
+										</div>
+										<span>Каталог товаров</span>
+									</button>
+
+									<div class="mini_modal" id="catalog_modal">
+										<div class="cont">
+											<div class="row">
+												<div><a href="/">
+													<div class="icon">
+														<img src="images/ic_category1.svg" alt="">
+													</div>
+													<span>Рентгенозащитная одежда</span>
+												</a></div>
+
+												<div><a href="/">
+													<div class="icon">
+														<img src="images/ic_category2.svg" alt="">
+													</div>
+													<span>Рентгенозащитные ширмы</span>
+												</a></div>
+
+												<div><a href="/">
+													<div class="icon">
+														<img src="images/ic_category3.svg" alt="">
+													</div>
+													<span>Экраны усиливающие медицинские</span>
+												</a></div>
+
+												<div><a href="/">
+													<div class="icon">
+														<img src="images/ic_category4.svg" alt="">
+													</div>
+													<span>Рентгенозащитные окна </span>
+												</a></div>
+
+												<div><a href="/">
+													<div class="icon">
+														<img src="images/ic_category5.svg" alt="">
+													</div>
+													<span>Кассеты радиографические</span>
+												</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="contacts">
+									<div class="phone">
+										<a href="tel:+73832625029">
+											<img src="images/ic_phone.svg" alt="">
+											<span>+7(383)262-50-29</span>
+										</a>
+									</div>
+
+									<div class="site">
+										<a href="https://RENEX.RU">
+											<img src="images/ic_site.svg" alt="">
+											<span>RENEX.RU</span>
+										</a>
+									</div>
+
+									<div class="email">
+										<a href="mailto:office@renex.ru">
+											<img src="images/ic_email.svg" alt="">
+											<span>office@renex.ru</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+						<a href="/" class="logo">
+							<img src="images/logo.png" alt="">
+							<div>
+								<div class="name">Ренекс</div>
+								<div class="desc">оборудование и пренадлежности<br> для рентгенодиагностики</div>
+							</div>
+						</a>
+
+						<div class="phone">
+							<a href="tel:+73832625029">
+								<img src="images/ic_phone.svg" alt="">
+								<span>+7(383)262-50-29</span>
+							</a>
+						</div>
+
+						<div class="search modal_cont">
+							<button class="btn mini_modal_btn" data-modal-id="#mob_search_modal">
+								<img src="images/ic_search.svg" alt=""></button>
+
+							<div class="mini_modal" id="mob_search_modal">
+								<form action="">
+									<input type="text" name="" value="" class="input" placeholder="Введите наименование или артикул товара">
+
+									<button type="submit" class="submit_btn">
+										<img src="images/ic_search.svg" alt="">
+									</button>
+								</form>
+							</div>
+						</div>
+
+						<a href="/" class="cart_link">
+							<img src="images/ic_cart.svg" alt="">
+							<div class="count">10</div>
+						</a>
+
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+					</div>
+				</section>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<div class="breadcrumbs">
+							Вы находитесь тут:
+							<a href="/">Главная</a> <span class="sep">|</span>
+							<span class="current">Каталог товаров</span>
+						</div>
+
+						<h1 class="page_title">Каталог товаров</h1>
+					</div>
+				</section>
+
+
+				<section class="cats_list">
+					<div class="cont">
+						<div class="row">
+							<div><a href="/">
+								<div class="icon">
+									<img src="images/ic_category1.svg" alt="">
+								</div>
+								<span>Рентгенозащитная одежда</span>
+							</a></div>
+
+							<div><a href="/">
+								<div class="icon">
+									<img src="images/ic_category2.svg" alt="">
+								</div>
+								<span>Рентгенозащитные ширмы</span>
+							</a></div>
+
+							<div><a href="/">
+								<div class="icon">
+									<img src="images/ic_category3.svg" alt="">
+								</div>
+								<span>Экраны усиливающие медицинские</span>
+							</a></div>
+
+							<div><a href="/">
+								<div class="icon">
+									<img src="images/ic_category4.svg" alt="">
+								</div>
+								<span>Рентгенозащитные окна </span>
+							</a></div>
+
+							<div><a href="/">
+								<div class="icon">
+									<img src="images/ic_category5.svg" alt="">
+								</div>
+								<span>Кассеты радиографические</span>
+							</a></div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="products block">
+					<div class="cont">
+						<div class="head">
+							<div class="count"><b>Всего товаров:</b> 2227</div>
+
+							<div class="sort">
+								<div class="name">Сортировать:</div>
+
+								<button class="btn up">
+									<img src="images/ic_sort_up.svg" alt="">
+									<img src="images/ic_sort_down.svg" alt="">
+									<span>по названию</span>
+								</button>
+							</div>
+
+							<div class="view">
+								<button class="btn_list">
+									<img src="images/ic_view_list.svg" alt="">
+									<img src="images/ic_view_list_white.svg" alt="">
+								</button>
+
+								<button class="btn_grid active">
+									<img src="images/ic_view_grid.svg" alt="">
+									<img src="images/ic_view_grid_white.svg" alt="">
+								</button>
+							</div>
+						</div>
+
+
+						<div class="row">
+							<div class="product">
+								<a href="/" class="thumb">
+									<div><img data-src="images/tmp/product_thumb.jpg" alt="" class="lozad"></div>
+								</a>
+
+								<div class="info">
+									<div class="name">
+										<a href="/">Фартук рентгенозащитный двусторонний "РЕНЕКС ФРД"</a>
+									</div>
+
+									<button class="quike_view_btn" data-fancybox data-type="ajax" data-src="product_quike_view_modal.html">
+										<img src="images/ic_zoom.svg" alt="">
+									</button>
+
+									<div class="articul">Арт.: 12345678</div>
+
+									<div class="desc">Окна поставляются потребителю полностью готовыми к установке (стекло в заводских условиях вставлено в раму);<br> Рама имеет оригинальную конструкцию, изготавливается из пластикового профиля, отличается особой прочностью, долговечностью, высокими декоративными свойствами;<br> В комплект поставки входят все необходимые комплектующие для установки и закрепления окна в проёме;</div>
+								</div>
+
+								<div class="buy">
+									<div class="price">
+										<div><b>35000</b> ₽</div>
+										<div class="old">37999 ₽</div>
+									</div>
+
+									<div class="amount">
+										<button type="button" class="minus">-</button>
+
+										<input type="text" value="1" class="input"
+										  data-minimum="1" data-maximum="99999" data-step="1" data-unit="" maxlength="5">
+
+										<button type="button" class="plus">+</button>
+									</div>
+
+									<button class="buy_btn">В корзину</button>
+								</div>
+							</div>
+
+
+							<div class="product">
+								<a href="/" class="thumb">
+									<div><img data-src="images/tmp/product_thumb2.jpg" alt="" class="lozad"></div>
+								</a>
+
+								<div class="info">
+									<div class="name">
+										<a href="/">РЕНЕКС ЭУ-Г3 - экраны усиливающие медицинские гадолиниевые повышенного усиления</a>
+									</div>
+
+									<button class="quike_view_btn" data-fancybox data-type="ajax" data-src="product_quike_view_modal.html">
+										<img src="images/ic_zoom.svg" alt="">
+									</button>
+
+									<div class="articul">Арт.: 12345678</div>
+
+									<div class="desc">Окна поставляются потребителю полностью готовыми к установке (стекло в заводских условиях вставлено в раму);<br> Рама имеет оригинальную конструкцию, изготавливается из пластикового профиля, отличается особой прочностью, долговечностью, высокими декоративными свойствами;<br> В комплект поставки входят все необходимые комплектующие для установки и закрепления окна в проёме;</div>
+								</div>
+
+								<div class="buy">
+									<div class="price">
+										<div><b>35000</b> ₽</div>
+										<div class="old">37999 ₽</div>
+									</div>
+
+									<div class="amount">
+										<button type="button" class="minus">-</button>
+
+										<input type="text" value="1" class="input"
+										  data-minimum="1" data-maximum="99999" data-step="1" data-unit="" maxlength="5">
+
+										<button type="button" class="plus">+</button>
+									</div>
+
+									<button class="buy_btn">В корзину</button>
+								</div>
+							</div>
+
+
+							<div class="product">
+								<a href="/" class="thumb">
+									<div><img data-src="images/tmp/product_thumb3.jpg" alt="" class="lozad"></div>
+								</a>
+
+								<div class="info">
+									<div class="name">
+										<a href="/">Фартук рентгенозащитный двусторонний "РЕНЕКС ФРД"</a>
+									</div>
+
+									<button class="quike_view_btn" data-fancybox data-type="ajax" data-src="product_quike_view_modal.html">
+										<img src="images/ic_zoom.svg" alt="">
+									</button>
+
+									<div class="articul">Арт.: 12345678</div>
+
+									<div class="desc">Окна поставляются потребителю полностью готовыми к установке (стекло в заводских условиях вставлено в раму);<br> Рама имеет оригинальную конструкцию, изготавливается из пластикового профиля, отличается особой прочностью, долговечностью, высокими декоративными свойствами;<br> В комплект поставки входят все необходимые комплектующие для установки и закрепления окна в проёме;</div>
+								</div>
+
+								<div class="buy">
+									<div class="price">
+										<div><b>35000</b> ₽</div>
+										<div class="old">37999 ₽</div>
+									</div>
+
+									<div class="amount">
+										<button type="button" class="minus">-</button>
+
+										<input type="text" value="1" class="input"
+										  data-minimum="1" data-maximum="99999" data-step="1" data-unit="" maxlength="5">
+
+										<button type="button" class="plus">+</button>
+									</div>
+
+									<button class="buy_btn">В корзину</button>
+								</div>
+							</div>
+
+
+							<div class="product">
+								<a href="/" class="thumb">
+									<div><img data-src="images/tmp/product_thumb4.jpg" alt="" class="lozad"></div>
+								</a>
+
+								<div class="info">
+									<div class="name">
+										<a href="/">РЕНЕКС ЭУ-Г3 - экраны усиливающие медицинские гадолиниевые повышенного усиления</a>
+									</div>
+
+									<button class="quike_view_btn" data-fancybox data-type="ajax" data-src="product_quike_view_modal.html">
+										<img src="images/ic_zoom.svg" alt="">
+									</button>
+
+									<div class="articul">Арт.: 12345678</div>
+
+									<div class="desc">Окна поставляются потребителю полностью готовыми к установке (стекло в заводских условиях вставлено в раму);<br> Рама имеет оригинальную конструкцию, изготавливается из пластикового профиля, отличается особой прочностью, долговечностью, высокими декоративными свойствами;<br> В комплект поставки входят все необходимые комплектующие для установки и закрепления окна в проёме;</div>
+								</div>
+
+								<div class="buy">
+									<div class="price">
+										<div><b>35000</b> ₽</div>
+										<div class="old">37999 ₽</div>
+									</div>
+
+									<div class="amount">
+										<button type="button" class="minus">-</button>
+
+										<input type="text" value="1" class="input"
+										  data-minimum="1" data-maximum="99999" data-step="1" data-unit="" maxlength="5">
+
+										<button type="button" class="plus">+</button>
+									</div>
+
+									<button class="buy_btn">В корзину</button>
+								</div>
+							</div>
+
+
+							<div class="product">
+								<a href="/" class="thumb">
+									<div><img data-src="images/tmp/product_thumb.jpg" alt="" class="lozad"></div>
+								</a>
+
+								<div class="info">
+									<div class="name">
+										<a href="/">Фартук рентгенозащитный двусторонний "РЕНЕКС ФРД"</a>
+									</div>
+
+									<button class="quike_view_btn" data-fancybox data-type="ajax" data-src="product_quike_view_modal.html">
+										<img src="images/ic_zoom.svg" alt="">
+									</button>
+
+									<div class="articul">Арт.: 12345678</div>
+
+									<div class="desc">Окна поставляются потребителю полностью готовыми к установке (стекло в заводских условиях вставлено в раму);<br> Рама имеет оригинальную конструкцию, изготавливается из пластикового профиля, отличается особой прочностью, долговечностью, высокими декоративными свойствами;<br> В комплект поставки входят все необходимые комплектующие для установки и закрепления окна в проёме;</div>
+								</div>
+
+								<div class="buy">
+									<div class="price">
+										<div><b>35000</b> ₽</div>
+										<div class="old">37999 ₽</div>
+									</div>
+
+									<div class="amount">
+										<button type="button" class="minus">-</button>
+
+										<input type="text" value="1" class="input"
+										  data-minimum="1" data-maximum="99999" data-step="1" data-unit="" maxlength="5">
+
+										<button type="button" class="plus">+</button>
+									</div>
+
+									<button class="buy_btn">В корзину</button>
+								</div>
+							</div>
+
+
+							<div class="product">
+								<a href="/" class="thumb">
+									<div><img data-src="images/tmp/product_thumb2.jpg" alt="" class="lozad"></div>
+								</a>
+
+								<div class="info">
+									<div class="name">
+										<a href="/">РЕНЕКС ЭУ-Г3 - экраны усиливающие медицинские гадолиниевые повышенного усиления</a>
+									</div>
+
+									<button class="quike_view_btn" data-fancybox data-type="ajax" data-src="product_quike_view_modal.html">
+										<img src="images/ic_zoom.svg" alt="">
+									</button>
+
+									<div class="articul">Арт.: 12345678</div>
+
+									<div class="desc">Окна поставляются потребителю полностью готовыми к установке (стекло в заводских условиях вставлено в раму);<br> Рама имеет оригинальную конструкцию, изготавливается из пластикового профиля, отличается особой прочностью, долговечностью, высокими декоративными свойствами;<br> В комплект поставки входят все необходимые комплектующие для установки и закрепления окна в проёме;</div>
+								</div>
+
+								<div class="buy">
+									<div class="price">
+										<div><b>35000</b> ₽</div>
+										<div class="old">37999 ₽</div>
+									</div>
+
+									<div class="amount">
+										<button type="button" class="minus">-</button>
+
+										<input type="text" value="1" class="input"
+										  data-minimum="1" data-maximum="99999" data-step="1" data-unit="" maxlength="5">
+
+										<button type="button" class="plus">+</button>
+									</div>
+
+									<button class="buy_btn">В корзину</button>
+								</div>
+							</div>
+
+
+							<div class="product">
+								<a href="/" class="thumb">
+									<div><img data-src="images/tmp/product_thumb3.jpg" alt="" class="lozad"></div>
+								</a>
+
+								<div class="info">
+									<div class="name">
+										<a href="/">Фартук рентгенозащитный двусторонний "РЕНЕКС ФРД"</a>
+									</div>
+
+									<button class="quike_view_btn" data-fancybox data-type="ajax" data-src="product_quike_view_modal.html">
+										<img src="images/ic_zoom.svg" alt="">
+									</button>
+
+									<div class="articul">Арт.: 12345678</div>
+
+									<div class="desc">Окна поставляются потребителю полностью готовыми к установке (стекло в заводских условиях вставлено в раму);<br> Рама имеет оригинальную конструкцию, изготавливается из пластикового профиля, отличается особой прочностью, долговечностью, высокими декоративными свойствами;<br> В комплект поставки входят все необходимые комплектующие для установки и закрепления окна в проёме;</div>
+								</div>
+
+								<div class="buy">
+									<div class="price">
+										<div><b>35000</b> ₽</div>
+										<div class="old">37999 ₽</div>
+									</div>
+
+									<div class="amount">
+										<button type="button" class="minus">-</button>
+
+										<input type="text" value="1" class="input"
+										  data-minimum="1" data-maximum="99999" data-step="1" data-unit="" maxlength="5">
+
+										<button type="button" class="plus">+</button>
+									</div>
+
+									<button class="buy_btn">В корзину</button>
+								</div>
+							</div>
+
+
+							<div class="product">
+								<a href="/" class="thumb">
+									<div><img data-src="images/tmp/product_thumb4.jpg" alt="" class="lozad"></div>
+								</a>
+
+								<div class="info">
+									<div class="name">
+										<a href="/">РЕНЕКС ЭУ-Г3 - экраны усиливающие медицинские гадолиниевые повышенного усиления</a>
+									</div>
+
+									<button class="quike_view_btn" data-fancybox data-type="ajax" data-src="product_quike_view_modal.html">
+										<img src="images/ic_zoom.svg" alt="">
+									</button>
+
+									<div class="articul">Арт.: 12345678</div>
+
+									<div class="desc">Окна поставляются потребителю полностью готовыми к установке (стекло в заводских условиях вставлено в раму);<br> Рама имеет оригинальную конструкцию, изготавливается из пластикового профиля, отличается особой прочностью, долговечностью, высокими декоративными свойствами;<br> В комплект поставки входят все необходимые комплектующие для установки и закрепления окна в проёме;</div>
+								</div>
+
+								<div class="buy">
+									<div class="price">
+										<div><b>35000</b> ₽</div>
+										<div class="old">37999 ₽</div>
+									</div>
+
+									<div class="amount">
+										<button type="button" class="minus">-</button>
+
+										<input type="text" value="1" class="input"
+										  data-minimum="1" data-maximum="99999" data-step="1" data-unit="" maxlength="5">
+
+										<button type="button" class="plus">+</button>
+									</div>
+
+									<button class="buy_btn">В корзину</button>
+								</div>
+							</div>
+
+
+							<div class="product">
+								<a href="/" class="thumb">
+									<div><img data-src="images/tmp/product_thumb.jpg" alt="" class="lozad"></div>
+								</a>
+
+								<div class="info">
+									<div class="name">
+										<a href="/">Фартук рентгенозащитный двусторонний "РЕНЕКС ФРД"</a>
+									</div>
+
+									<button class="quike_view_btn" data-fancybox data-type="ajax" data-src="product_quike_view_modal.html">
+										<img src="images/ic_zoom.svg" alt="">
+									</button>
+
+									<div class="articul">Арт.: 12345678</div>
+
+									<div class="desc">Окна поставляются потребителю полностью готовыми к установке (стекло в заводских условиях вставлено в раму);<br> Рама имеет оригинальную конструкцию, изготавливается из пластикового профиля, отличается особой прочностью, долговечностью, высокими декоративными свойствами;<br> В комплект поставки входят все необходимые комплектующие для установки и закрепления окна в проёме;</div>
+								</div>
+
+								<div class="buy">
+									<div class="price">
+										<div><b>35000</b> ₽</div>
+										<div class="old">37999 ₽</div>
+									</div>
+
+									<div class="amount">
+										<button type="button" class="minus">-</button>
+
+										<input type="text" value="1" class="input"
+										  data-minimum="1" data-maximum="99999" data-step="1" data-unit="" maxlength="5">
+
+										<button type="button" class="plus">+</button>
+									</div>
+
+									<button class="buy_btn">В корзину</button>
+								</div>
+							</div>
+
+
+							<div class="product">
+								<a href="/" class="thumb">
+									<div><img data-src="images/tmp/product_thumb2.jpg" alt="" class="lozad"></div>
+								</a>
+
+								<div class="info">
+									<div class="name">
+										<a href="/">РЕНЕКС ЭУ-Г3 - экраны усиливающие медицинские гадолиниевые повышенного усиления</a>
+									</div>
+
+									<button class="quike_view_btn" data-fancybox data-type="ajax" data-src="product_quike_view_modal.html">
+										<img src="images/ic_zoom.svg" alt="">
+									</button>
+
+									<div class="articul">Арт.: 12345678</div>
+
+									<div class="desc">Окна поставляются потребителю полностью готовыми к установке (стекло в заводских условиях вставлено в раму);<br> Рама имеет оригинальную конструкцию, изготавливается из пластикового профиля, отличается особой прочностью, долговечностью, высокими декоративными свойствами;<br> В комплект поставки входят все необходимые комплектующие для установки и закрепления окна в проёме;</div>
+								</div>
+
+								<div class="buy">
+									<div class="price">
+										<div><b>35000</b> ₽</div>
+										<div class="old">37999 ₽</div>
+									</div>
+
+									<div class="amount">
+										<button type="button" class="minus">-</button>
+
+										<input type="text" value="1" class="input"
+										  data-minimum="1" data-maximum="99999" data-step="1" data-unit="" maxlength="5">
+
+										<button type="button" class="plus">+</button>
+									</div>
+
+									<button class="buy_btn">В корзину</button>
+								</div>
+							</div>
+
+
+							<div class="product">
+								<a href="/" class="thumb">
+									<div><img data-src="images/tmp/product_thumb3.jpg" alt="" class="lozad"></div>
+								</a>
+
+								<div class="info">
+									<div class="name">
+										<a href="/">Фартук рентгенозащитный двусторонний "РЕНЕКС ФРД"</a>
+									</div>
+
+									<button class="quike_view_btn" data-fancybox data-type="ajax" data-src="product_quike_view_modal.html">
+										<img src="images/ic_zoom.svg" alt="">
+									</button>
+
+									<div class="articul">Арт.: 12345678</div>
+
+									<div class="desc">Окна поставляются потребителю полностью готовыми к установке (стекло в заводских условиях вставлено в раму);<br> Рама имеет оригинальную конструкцию, изготавливается из пластикового профиля, отличается особой прочностью, долговечностью, высокими декоративными свойствами;<br> В комплект поставки входят все необходимые комплектующие для установки и закрепления окна в проёме;</div>
+								</div>
+
+								<div class="buy">
+									<div class="price">
+										<div><b>35000</b> ₽</div>
+										<div class="old">37999 ₽</div>
+									</div>
+
+									<div class="amount">
+										<button type="button" class="minus">-</button>
+
+										<input type="text" value="1" class="input"
+										  data-minimum="1" data-maximum="99999" data-step="1" data-unit="" maxlength="5">
+
+										<button type="button" class="plus">+</button>
+									</div>
+
+									<button class="buy_btn">В корзину</button>
+								</div>
+							</div>
+
+
+							<div class="product">
+								<a href="/" class="thumb">
+									<div><img data-src="images/tmp/product_thumb4.jpg" alt="" class="lozad"></div>
+								</a>
+
+								<div class="info">
+									<div class="name">
+										<a href="/">РЕНЕКС ЭУ-Г3 - экраны усиливающие медицинские гадолиниевые повышенного усиления</a>
+									</div>
+
+									<button class="quike_view_btn" data-fancybox data-type="ajax" data-src="product_quike_view_modal.html">
+										<img src="images/ic_zoom.svg" alt="">
+									</button>
+
+									<div class="articul">Арт.: 12345678</div>
+
+									<div class="desc">Окна поставляются потребителю полностью готовыми к установке (стекло в заводских условиях вставлено в раму);<br> Рама имеет оригинальную конструкцию, изготавливается из пластикового профиля, отличается особой прочностью, долговечностью, высокими декоративными свойствами;<br> В комплект поставки входят все необходимые комплектующие для установки и закрепления окна в проёме;</div>
+								</div>
+
+								<div class="buy">
+									<div class="price">
+										<div><b>35000</b> ₽</div>
+										<div class="old">37999 ₽</div>
+									</div>
+
+									<div class="amount">
+										<button type="button" class="minus">-</button>
+
+										<input type="text" value="1" class="input"
+										  data-minimum="1" data-maximum="99999" data-step="1" data-unit="" maxlength="5">
+
+										<button type="button" class="plus">+</button>
+									</div>
+
+									<button class="buy_btn">В корзину</button>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="pagination alignright">
+							<button class="load_more">Посмотреть еще</button>
+
+							<a href="/" class="prev">
+								<img src="images/ic_pag_arrow.svg" alt="">
+							</a>
+
+							<div class="sep">|</div>
+							<a class="active">1</a>
+							<a href="/">2</a>
+							<a href="/">3</a>
+							<div class="sep">|</div>
+
+							<a href="/" class="next">
+								<img src="images/ic_pag_arrow.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="bottom_text block">
+					<div class="cont">
+						<div class="text_block">
+							<h2>Каталог товаров</h2>
+
+							<p>Закрытое акционерное общество «РЕНЕКС» работает в Новосибирске с 1992 года. За сравнительно короткое время нами построена производственная база c уникальным оборудованием, разработаны и внедрены в производство новые технологии, освоен выпуск продукции, успешно конкурирующей с лучшими мировыми образцами. И сегодня мы с гордостью можем сказать, что предприятие занимает важное место в ряду производителей медицинской техники, а торговая марка «РЕНЕКС» гарантирует неизменно высокое качество изделий.</p>
+
+							<p>С момента основания, главным приоритетом в работе для нас остаются интересы здравоохранения. Поэтому приобретается только самое лучшее сырье, варианты разработок обсуждаются с практикующими врачами, готовая продукция проходит многоступенчатый контроль качества в специально созданной лаборатории, опытные партии отправляются на проверку в ведущие медицинские учреждения России. Только при такой степени ответственности за конечный результат можно получить изделие, способное гарантировать пациентам и врачам надежность, безопасность и высокий уровень рентгенодиагностики. Так появились и заняли лидирующее место на рынке радиографических кассет кассеты «РЕНЕКС», получившие в 2002 году звание «Новосибирская марка». В медицинские учреждения России и СНГ их поставлено уже более 100 000 комплектов.</p>
+
+							<p>ЗАО «РЕНЕКС» остается единственным в России производителем усиливающих медицинских экранов и экранов для рентгеноскопии и флюорографии. По оценке российских и европейских специалистов в области рентгенологии, наши экраны не уступают, а по некоторым показателям превосходят зарубежные аналоги. С 2003 года внедрена в производство и запатентована новая система, уникальность которой заключается в универсальности ее применения. Система подходит для всех видов рентгенологических исследований (кроме маммографии), одинаково хорошо работает с сине- и зеленочувствительной пленкой, дозовая нагрузка на пациента снижается в 2-4 раза, а высокое качество полученных снимков уже оценили рентгенологи во многих регионах страны.</p>
+
+							<p>Представляя Вам нашу продукцию, мы уверены, что предлагаем только лучшее и надеемся, что наши совместные усилия поднимут отечественное здравоохранение на должный уровень.</p>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="info">
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.png" alt="">
+							<div>
+								<div class="name">Ренекс</div>
+								<div class="desc">оборудование и пренадлежности<br> для рентгенодиагностики</div>
+							</div>
+						</div>
+
+						<div class="location">
+							ЗАО "РЕНЕКС"<br>
+							630063, Новосибирск,<br>
+							ул. Декабристов 269, помещение 27
+						</div>
+
+						<div class="contacts">
+							<div class="phone">
+								<img src="images/ic_phone.svg" alt="">
+
+								<div>Тел./факс: <a href="tel:83832622506">8 (383) 262-25-06</a>, <a href="tel:2625204">262-52-04</a></div>
+
+								<div>Факс: <a href="fax:83832625029">8 (383) 262-50-29</a></div>
+							</div>
+
+							<div class="email">
+								<img src="images/ic_email.svg" alt="">
+
+								<div>E-mail: <a href="mailto:office@renex.ru">office@renex.ru</a></div>
+							</div>
+						</div>
+
+						<div class="links">
+							<div><a href="/">Ссылки</a></div>
+
+							<div><a href="/">Политика конфиденциальности</a></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="bottom">
+					<div class="cont row">
+						<div class="copyright">Все права защищены. 2021</div>
+
+						<div class="creator">
+							<a href="/" target="_blank" rel="noopener">Разработка и поддержка: Valuehost</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/datepicker.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
