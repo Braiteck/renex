@@ -1,8 +1,4 @@
 $(() => {
-	// Есть ли поддержка тач событий или это apple устройство
-	if (!is_touch_device() || !/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) $('html').addClass('custom_scroll')
-
-
 	// Ленивая загрузка
 	setTimeout(() => {
 		observer = lozad('.lozad', {

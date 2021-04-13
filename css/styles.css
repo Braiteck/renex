@@ -156,25 +156,6 @@ html
     min-height:         fill-available;
 }
 
-html.custom_scroll ::-webkit-scrollbar
-{
-    width: 10px;
-    height: 10px;
-
-    background-color: #d8d8d8;
-}
-
-html.custom_scroll ::-webkit-scrollbar-thumb
-{
-    background-color: #2862ac;
-}
-
-html.custom_scroll
-{
-    scrollbar-color: #2862ac #d8d8d8;
-    scrollbar-width: thin;
-}
-
 
 body
 {
@@ -686,6 +667,39 @@ button
     color: #fff;
 
     background: none;
+}
+
+
+
+/*-------------------
+    Custom scroll
+-------------------*/
+.mCSB_scrollTools
+{
+    width: 2px;
+
+    background: #d8d8d8;
+}
+
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container
+{
+    margin: 0;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+{
+    width: 2px;
+
+    border-radius: 0;
+    background: #2862ac !important;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail
+{
+    width: 2px;
+
+    border-radius: 0;
+    background: #d8d8d8 !important;
 }
 
 
@@ -3445,27 +3459,28 @@ aside > * + *
 
 
 
-.about_info .gallery
+.about_info .custom_scrollbar
 {
+    position: relative;
+
     overflow: auto;
 
     max-height: 560px;
-    padding-left: 65px;
 
     direction: rtl;
 }
 
-.about_info .gallery::-webkit-scrollbar
+
+.about_info .gallery
 {
-    width: 2px;
-    height: 2px;
+    padding-left: 65px;
+
+    direction: ltr;
 }
 
 .about_info .gallery > *
 {
     width: 100%;
-
-    direction: ltr;
 }
 
 .about_info .gallery > * + *

@@ -9,13 +9,6 @@
     }
 
 
-    html.custom_scroll ::-webkit-scrollbar
-    {
-        width: 5px;
-        height: 5px;
-    }
-
-
     .content_flex .content
     {
         width: 100%;
@@ -388,12 +381,23 @@
     }
 
 
-    .about_info .gallery
+    .about_info .custom_scrollbar
     {
-        display: flex;
         overflow: visible;
 
         max-height: none;
+    }
+
+    .about_info .mCSB_scrollTools
+    {
+        display: none !important;
+    }
+
+
+    .about_info .gallery
+    {
+        display: flex;
+
         margin-bottom: -24px;
         margin-left: -24px;
         padding-left: 0;

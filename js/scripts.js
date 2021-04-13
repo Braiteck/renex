@@ -119,6 +119,16 @@ $(() => {
             productHeight($(this), parseInt($(this).css('--products_count')))
         })
     })
+
+
+    // Кастомный скролл
+    if ($(window).width() > 1023) {
+        $('.custom_scrollbar').mCustomScrollbar({
+            scrollButtons: false,
+            scrollInertia: 300,
+            mouseWheel: { scrollAmount: 100 }
+        })
+    }
 })
 
 
